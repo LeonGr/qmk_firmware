@@ -15,6 +15,7 @@ enum custom_keycodes {
 
 #define FN MO(_FN)
 #define ESCCTL MT(MOD_LCTL, KC_ESC)
+#define CTLSPC LCTL(KC_SPC) // Ctrl + Space
 
 #define RESET QK_BOOTLOADER
 #define E_RST QK_CLEAR_EEPROM
@@ -60,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_MUTE, KC_MSTP, KC_MPLY, KC_VOLD, KC_PGDN, KC_LPRN, _______,          _______, KC_RPRN, KC_PPLS, KC_MPRV, KC_MNXT, KC_MSEL, KC_MPLY,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, _______, _______,                   _______, _______, _______
+                                    _______, _______, CTLSPC,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
