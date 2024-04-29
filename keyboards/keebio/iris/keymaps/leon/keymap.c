@@ -14,7 +14,7 @@ enum custom_keycodes {
 };
 
 #define FN MO(_FN)
-#define ESCCTL MT(MOD_LCTL, KC_ESC)
+#define ESCCTL MT(MOD_LCTL, KC_ESC) // Mod-Tap: left-hand side on hold, right-hand side on tap
 #define CTLSPC LCTL(KC_SPC) // Ctrl + Space
 
 #define RESET QK_BOOTLOADER
